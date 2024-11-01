@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import { getBooks } from "./util";
 
 const routes = createBrowserRouter([
   {
@@ -10,7 +11,7 @@ const routes = createBrowserRouter([
     element: <Layout />,
     errorElement: <NotFound />,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Home />, loader: getBooks },
       {
         path: "dashboard",
         element: <Dashboard />,

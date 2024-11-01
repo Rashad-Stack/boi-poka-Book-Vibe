@@ -6,7 +6,7 @@ export default function Banner() {
           <div className="hero-content w-full flex-col gap-32 lg:flex-row-reverse">
             <img
               src="/images/hero.svg"
-              className="max-w-xs rounded-lg shadow-2xl"
+              className="max-w-52 rounded-lg shadow-2xl"
             />
             <div className="space-y-8">
               <h1 className="font-playfair text-5xl font-bold">
