@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
+import BookDetails from "./pages/BookDetails";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -12,6 +13,7 @@ const routes = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { path: "/", element: <Home />, loader: getBooks },
+      { path: "books/:bookId", element: <BookDetails /> },
       {
         path: "dashboard",
         element: <Dashboard />,

@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     title: "Listed Books",
-    url: "/books",
+    url: "/listed-books",
   },
   {
     title: "Pages to Read",

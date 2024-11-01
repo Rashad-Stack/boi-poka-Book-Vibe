@@ -7,7 +7,7 @@ export interface Book {
   totalPages: number;
   rating: number;
   category: string;
-  tags: [string];
+  tags: string[];
   publisher: string;
   yearOfPublishing: number;
 }

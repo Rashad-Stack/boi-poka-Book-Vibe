@@ -8,7 +8,11 @@ interface BookProps {
 
 export default function Book({ book }: BookProps) {
   return (
-    <Link to={`/books/${book.bookId}`} className="card border p-5">
+    <Link
+      to={`/books/${book.bookId}`}
+      state={{ book }}
+      className="card border p-5"
+    >
       <figure className="max-h-52 rounded-xl bg-base-200 p-10">
         <img
           src={book.image}
